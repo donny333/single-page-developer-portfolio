@@ -235,5 +235,84 @@ header{
 
 footer{
     background-color: var(--lightBlack);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 15px;
+    #contactIntro{
+        text-align: center;
+        > h1{
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -1.14px;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        > p {
+            line-height: 26px;
+            font-size: 16px;
+            color: var(--grey);
+            margin: 0;
+        }
+        margin-bottom: 50px;
+    }
+    > hr{
+        width: 100%;
+        margin-top: 87px;
+        margin-bottom: 39px;
+    }
+}
 
+#contactForm{
+    .textArea{
+        position: relative;
+    }
+    > div{
+        margin-bottom: 32px;
+        input {
+            border: none;
+            background-color: #00000000;
+            border-bottom: 1px solid var(--white);
+            font-size: 16px;
+            line-height: 24px;
+            width: calc(100% - 30px);
+            color: var(--white);
+            padding-left: 24px;
+            padding-bottom: 17px;
+        }
+        input:focus{
+            outline: none;
+            border-bottom: 1px solid var(--green);
+        }
+        textarea{
+            border: none;
+            background-color: #00000000;
+            border-bottom: 1px solid var(--white);
+            font-size: 16px;
+            line-height: 26px;
+            width: calc(100% - 30px);
+            color: var(--white);    
+            padding-left: 24px;
+        }
+        textarea:focus{
+            outline: none;
+            border-bottom: 1px solid var(--green);
+        }
+        img{
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-100%, 50%);
+            width: calc(133.33333333%);
+        }
+    }
+    .submitDiv{
+        display: flex;
+        justify-content: end;
+        > button{
+            background-color: #00000000;
+            border: 0px solid;
+        }
+    }
 }

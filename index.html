@@ -20,7 +20,6 @@
         <a href="https://www.facebook.com/donatas.baguzis/" target="_blank"> <img class="icon" src="./assets/images/icon-facebook.svg" alt="Facebook icon"> </a>
       </div>
   </header>
-
   <main>
     <section id="hero">
       <div id="figures">
@@ -186,22 +185,32 @@
       </div>
       <form id="contactForm">
         <div>
-          <label for="name">NAME</label>
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" placeholder="NAME">
         </div>
         <div>
-          <label for="email">EMAIL</label>
-          <input type="text" name="email" id="email">
+          <input type="text" name="email" id="email" placeholder="EMAIL">
         </div>
-        <div>
-          <label for="message">MESSAGE</label>
-          <textarea type="text" name="message" id="message">
+        <div class="textArea">
+          <img src="./assets/images/pattern-rings.svg" alt="4 rings">
+          <textarea name="message" id="message" cols="30" rows="5" placeholder="MESSAGE"></textarea>
         </div>
-        <div>
-          <button type="submit">SEND MESSAGE</button>
+        <div class="submitDiv">
+          <button type="submit" class="linkMobile">SEND MESSAGE</button>
         </div>
       </form>
     </div>
+    <hr>
+    <section id="myContacts">
+      <div>
+        <h1 class="MHead">donatasbagužis</h1>
+      </div>
+      <div class="icons">
+        <a href="https://github.com/donny333" target="_blank"> <img class="icon" src="./assets/images/icon-github.svg" alt="GitHub icon"> </a>
+        <a href="https://www.frontendmentor.io/profile/donny333" target="_blank"> <img class="icon" src="./assets/images/icon-frontend-mentor.svg" alt="Frontend mentor icon"> </a>
+        <a href="https://www.linkedin.com/in/donatas-baguzis-461666127/" target="_blank"> <img class="icon" src="./assets/images/icon-linkedin.svg" alt="LinkedIn icon"> </a>
+        <a href="https://www.facebook.com/donatas.baguzis/" target="_blank"> <img class="icon" src="./assets/images/icon-facebook.svg" alt="Facebook icon"> </a>
+      </div>
+    </section>
   </footer>
 </body>
 </html>

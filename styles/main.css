@@ -232,4 +232,82 @@ header a > img {
 
 footer {
   background-color: var(--lightBlack);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 15px;
+}
+footer #contactIntro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+footer #contactIntro > h1 {
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -1.14px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+footer #contactIntro > p {
+  line-height: 26px;
+  font-size: 16px;
+  color: var(--grey);
+  margin: 0;
+}
+footer > hr {
+  width: 100%;
+  margin-top: 87px;
+  margin-bottom: 39px;
+}
+
+#contactForm .textArea {
+  position: relative;
+}
+#contactForm > div {
+  margin-bottom: 32px;
+}
+#contactForm > div input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid var(--white);
+  font-size: 16px;
+  line-height: 24px;
+  width: calc(100% - 30px);
+  color: var(--white);
+  padding-left: 24px;
+  padding-bottom: 17px;
+}
+#contactForm > div input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--green);
+}
+#contactForm > div textarea {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid var(--white);
+  font-size: 16px;
+  line-height: 26px;
+  width: calc(100% - 30px);
+  color: var(--white);
+  padding-left: 24px;
+}
+#contactForm > div textarea:focus {
+  outline: none;
+  border-bottom: 1px solid var(--green);
+}
+#contactForm > div img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-100%, 50%);
+  width: 133.33333333%;
+}
+#contactForm .submitDiv {
+  display: flex;
+  justify-content: end;
+}
+#contactForm .submitDiv > button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px solid;
 }/*# sourceMappingURL=main.css.map */
