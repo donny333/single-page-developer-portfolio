@@ -128,14 +128,55 @@ header{
     > a{
         display: block;
         text-decoration: underline 2px var(--green);
-        text-underline-offset: 10px;
+        text-underline-offset: 12px;
         color: var(--white);
         font-weight: bold;
         letter-spacing: 2.29px;
         text-align: center;
+        margin-bottom: 10px;
     }
     > * {
         margin: 0;
     }
 
+}
+
+#expirience{
+    margin: 80px 15px;
+    position: relative;
+    > hr{
+        border: 1px solid var(--grey);
+        margin: 0;
+    }
+    .rings{
+        position: absolute;
+        width: calc(133.33333333%);
+        right: 50%;
+        bottom: 0;
+        transform: translate(100%, 50%);
+    }
+    > div{
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        .language{
+            text-align: center;
+            >h1{
+                margin: 0;
+                line-height: 40px;
+                font-size: 32px;
+                font-weight: bold;
+            }
+            p{
+                margin: 0;
+                line-height: 26px;
+                font-size: 16px;
+                color: var(--grey);
+            }
+            
+        }
+    }
 }

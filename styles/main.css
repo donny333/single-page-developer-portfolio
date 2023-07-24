@@ -128,12 +128,52 @@ header a > img {
   display: block;
   -webkit-text-decoration: underline 2px var(--green);
           text-decoration: underline 2px var(--green);
-  text-underline-offset: 10px;
+  text-underline-offset: 12px;
   color: var(--white);
   font-weight: bold;
   letter-spacing: 2.29px;
   text-align: center;
+  margin-bottom: 10px;
 }
 #aboutMe > * {
   margin: 0;
+}
+
+#expirience {
+  margin: 80px 15px;
+  position: relative;
+}
+#expirience > hr {
+  border: 1px solid var(--grey);
+  margin: 0;
+}
+#expirience .rings {
+  position: absolute;
+  width: 133.33333333%;
+  right: 50%;
+  bottom: 0;
+  transform: translate(100%, 50%);
+}
+#expirience > div {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+#expirience > div .language {
+  text-align: center;
+}
+#expirience > div .language > h1 {
+  margin: 0;
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: bold;
+}
+#expirience > div .language p {
+  margin: 0;
+  line-height: 26px;
+  font-size: 16px;
+  color: var(--grey);
 }/*# sourceMappingURL=main.css.map */
