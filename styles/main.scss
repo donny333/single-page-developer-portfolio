@@ -91,6 +91,7 @@ header{
 }
 
 #hero{
+    overflow: hidden;
     #figures{
         position: relative;
         display: flex;
@@ -118,7 +119,7 @@ header{
 
 #aboutMe{
     margin-top: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 80px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -144,18 +145,21 @@ header{
 }
 
 #expirience{
-    margin: 80px 15px;
     position: relative;
+    overflow: hidden;
     > hr{
         border: 1px solid var(--grey);
-        margin: 0;
+        margin: 0 15px;
+    }
+    >hr:last-child{
+        margin-bottom: 80px;
     }
     .rings{
         position: absolute;
         width: calc(133.33333333%);
         right: 50%;
         bottom: 0;
-        transform: translate(100%, 50%);
+        transform: translate(100%, calc(50% - 80px));
     }
     > div{
         padding: 40px 0;
@@ -227,4 +231,9 @@ header{
             gap: 32px;
         }
     }
+}
+
+footer{
+    background-color: var(--lightBlack);
+
 }
