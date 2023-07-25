@@ -47,8 +47,8 @@ p {
 
 .linkMobile {
   display: block;
-  -webkit-text-decoration: underline 2px var(--green);
-          text-decoration: underline 2px var(--green);
+  -webkit-text-decoration: underline 2px var(--green) !important;
+          text-decoration: underline 2px var(--green) !important;
   text-underline-offset: 16px;
   color: var(--white);
   font-weight: bold;
@@ -110,7 +110,7 @@ header {
 }
 #hero #figures .rings {
   position: absolute;
-  width: 133.33333333%;
+  width: 530px;
   left: 50%;
   bottom: 65%;
   transform: translate(-100%, 100%);
@@ -148,6 +148,9 @@ header {
 #aboutMe > * {
   margin: 0;
 }
+#aboutMe > div:nth-child(2) {
+  display: none;
+}
 
 #expirience {
   position: relative;
@@ -162,7 +165,7 @@ header {
 }
 #expirience .rings {
   position: absolute;
-  width: 133.33333333%;
+  width: 530px;
   right: 50%;
   bottom: 0;
   transform: translate(100%, calc(50% - 80px));
@@ -307,7 +310,7 @@ footer > hr {
   left: 50%;
   bottom: 0;
   transform: translate(-100%, 50%);
-  width: 133.33333333%;
+  width: 530px;
 }
 #contactForm .submitDiv {
   display: flex;
@@ -346,4 +349,55 @@ footer > hr {
 }
 .myContactsBottom a > img {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    position: static;
+    display: grid;
+    grid-template-rows: 62px 1fr;
+    grid-template-columns: 1.5fr 1fr;
+  }
+  .myContacts {
+    grid-area: 1/1/2/3;
+    width: calc(100% - 60px);
+    flex-direction: row;
+    height: 32px;
+    padding: 30px;
+    padding-bottom: 0;
+  }
+  .myContacts .icons {
+    justify-content: center;
+    gap: 32px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #aboutMe {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 90px;
+    margin-bottom: 60px;
+  }
+  #aboutMe h1 {
+    line-height: 72px;
+    font-size: 72px;
+    text-align: start;
+  }
+  #aboutMe p {
+    text-align: start;
+  }
+  #aboutMe a {
+    text-align: start;
+  }
+  #aboutMe > div:nth-child(1) {
+    display: none;
+  }
+  #aboutMe > div:nth-child(2) {
+    display: block;
+  }
+  #hero {
+    grid-column: 2;
+    grid-row: 2;
+    overflow: visible;
+  }
 }/*# sourceMappingURL=main.css.map */
