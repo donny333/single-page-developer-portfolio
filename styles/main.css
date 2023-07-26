@@ -176,9 +176,9 @@ header {
 #expirience .rings {
   position: absolute;
   width: 530px;
-  right: 0;
+  right: 50%;
   bottom: 0;
-  transform: translate(50%, calc(50% - 80px));
+  transform: translate(100%, calc(50% - 80px));
 }
 #expirience > div {
   padding: 40px 0;
@@ -471,5 +471,9 @@ footer > hr {
   }
   #expirience > hr:last-child {
     border: 1px solid var(--black);
+  }
+  #expirience .rings {
+    right: 0;
+    transform: translate(50%, calc(50% - 80px));
   }
 }/*# sourceMappingURL=main.css.map */
