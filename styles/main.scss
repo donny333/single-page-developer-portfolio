@@ -485,4 +485,47 @@ footer{
             transform: translate(50%, calc(50% - 80px));
         }
     }
+
+    #projects{
+        margin: 0 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 24px;
+        row-gap: 60px;
+        >div:first-child{
+            grid-area: 1/1/2/3;
+            margin: 0;
+            >h1{
+                font-size: 72px;
+                line-height: 72px;
+                padding-left: 2px;
+            }
+        }
+        .project{
+            margin-bottom: 0;
+        }
+        margin-bottom: 100px;
+    }
+
+    #footer{
+        #contactIntro{
+            width: 445px;
+            >h1{
+                font-size: 72px;
+                line-height: 72px;
+            }
+            >p{
+                line-height: 28px;
+                font-size: 18px;
+            }
+        }
+    }
+    #contactForm{
+        >div{
+            img{
+                left: 0;
+                transform: translate(-100%, 100%);
+            }
+        }
+    }
 }
