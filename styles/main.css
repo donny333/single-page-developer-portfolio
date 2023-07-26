@@ -255,6 +255,9 @@ footer {
   align-items: center;
   padding: 60px 15px;
 }
+footer #contact > img {
+  display: none;
+}
 footer #contactIntro {
   text-align: center;
   margin-bottom: 50px;
@@ -377,6 +380,10 @@ footer > hr {
     padding: 30px;
     padding-bottom: 0;
   }
+  .myContacts > div > h1 {
+    line-height: 32px;
+    font-size: 32px;
+  }
   .myContacts .icons {
     justify-content: center;
     gap: 32px;
@@ -446,7 +453,6 @@ footer > hr {
     display: block;
   }
   #expirience > hr {
-    margin: 0;
     margin: 0px 30px;
   }
   #expirience > div {
@@ -461,7 +467,7 @@ footer > hr {
     padding-left: 2px;
   }
   #expirience > div .language > h1 {
-    font-size: 56px;
+    font-size: 48px;
     line-height: 56px;
     margin-bottom: 14px;
   }
@@ -497,6 +503,9 @@ footer > hr {
   #projects .project {
     margin-bottom: 0;
   }
+  #footer {
+    padding: 60px 30px 40px 30px;
+  }
   #footer #contactIntro {
     width: 445px;
   }
@@ -508,8 +517,173 @@ footer > hr {
     line-height: 28px;
     font-size: 18px;
   }
+  #footer > hr {
+    margin-bottom: 30px;
+  }
   #contactForm > div img {
     left: 0;
     transform: translate(-100%, 100%);
+  }
+  .myContactsBottom {
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .myContactsBottom > div:first-child > h1 {
+    margin: 0;
+    line-height: 32px;
+    font-size: 32px;
+  }
+  .myContactsBottom .icons {
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 32px;
+  }
+}
+@media only screen and (min-width: 1174px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  header {
+    width: 1110px;
+    overflow: visible;
+  }
+  #hero #figures > img:first-child {
+    display: none;
+  }
+  #hero #figures > img:nth-child(2) {
+    display: none;
+  }
+  #hero #figures > img:nth-child(3) {
+    display: block;
+    width: 445px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: -10;
+  }
+  #hero #figures > img:nth-child(5) {
+    top: 520px;
+    right: 445px;
+  }
+  #aboutMe {
+    gap: 24px;
+    margin-bottom: 220px;
+    margin-top: 127px;
+  }
+  #aboutMe > img {
+    top: 133px;
+    transform: translate(-50%, 0);
+  }
+  #aboutMe > div:nth-child(1) {
+    display: none;
+  }
+  #aboutMe > div:nth-child(2) {
+    display: block;
+  }
+  #aboutMe > div:nth-child(2) > h1 {
+    line-height: 88px;
+    font-size: 88px;
+    letter-spacing: -2.5px;
+    font-weight: bold;
+  }
+  #aboutMe > p {
+    width: 445px;
+    line-height: 28px;
+    font-size: 18px;
+  }
+  main {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  main #expirience {
+    width: 1110px;
+    overflow: visible;
+  }
+  main #expirience > hr {
+    margin: 0;
+  }
+  main #expirience > div {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 5px;
+    padding: 0px;
+    padding-top: 72px;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 58px;
+  }
+  main #expirience .rings {
+    right: 0;
+    transform: translate(80%, 0);
+  }
+  main #expirience > hr:last-child {
+    margin-bottom: 140px;
+  }
+  #projects {
+    width: 1110px;
+    margin: 0;
+    -moz-column-gap: 30;
+         column-gap: 30;
+    row-gap: 70;
+    margin-bottom: 140px;
+  }
+  #projects > div:first-child > h1 {
+    padding-left: 5px;
+    line-height: 88px;
+    font-size: 88px;
+    letter-spacing: -2.5px;
+  }
+  #footer {
+    width: 100%;
+    padding: 84px 0 92px 0;
+  }
+  #footer #contact {
+    position: relative;
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #footer #contact > img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-80%);
+  }
+  #footer #contactIntro {
+    text-align: start;
+  }
+  #footer #contactIntro > h1 {
+    line-height: 88px;
+    font-size: 88px;
+    letter-spacing: -2.5px;
+  }
+  #footer #contactForm {
+    width: 445px;
+  }
+  #footer #contactForm > div > img {
+    display: none;
+  }
+  #footer #contactForm .submitDiv {
+    margin-bottom: 0;
+  }
+  #footer #contactForm .submitDiv > button {
+    margin-bottom: 0;
+  }
+  #footer hr {
+    width: 1110px;
+    margin-bottom: 47px;
+  }
+  #footer .myContactsBottom {
+    width: 1110px;
   }
 }/*# sourceMappingURL=main.css.map */
