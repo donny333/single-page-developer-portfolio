@@ -47,8 +47,6 @@ p {
 
 .linkMobile {
   text-decoration: none;
-}
-.linkMobile > span {
   display: block;
   -webkit-text-decoration: underline 2px var(--green) !important;
           text-decoration: underline 2px var(--green) !important;
@@ -125,7 +123,7 @@ header {
   transform: translate(-100%, 100%);
 }
 #hero #figures .circle {
-  width: 29vw;
+  width: 129px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -139,6 +137,9 @@ header {
   flex-direction: column;
   gap: 24px;
   padding: 0 15px;
+}
+#aboutMe > img {
+  display: none;
 }
 #aboutMe h1 {
   font-size: 36px;
@@ -362,10 +363,11 @@ footer > hr {
 
 @media only screen and (min-width: 768px) {
   header {
-    position: static;
+    position: relative;
+    overflow: hidden;
     display: grid;
     grid-template-rows: 62px 1fr;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 58% 42%;
   }
   .myContacts {
     grid-area: 1/1/2/3;
@@ -381,16 +383,55 @@ footer > hr {
     width: -moz-fit-content;
     width: fit-content;
   }
+  #hero {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  #hero #figures {
+    position: static;
+  }
+  #hero #figures > img:first-child {
+    display: none;
+  }
+  #hero #figures > img:nth-child(2) {
+    display: block;
+    width: 322px;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    z-index: -10;
+  }
+  #hero #figures > img:nth-child(3) {
+    display: none;
+  }
+  #hero #figures > img:nth-child(5) {
+    bottom: 50px;
+  }
+  #hero .rings {
+    display: none;
+  }
+  #hero .profilePicture {
+    width: 100%;
+  }
   #aboutMe {
     grid-column: 1;
     grid-row: 2;
     margin-top: 90px;
     margin-bottom: 60px;
+    padding-right: 0;
+  }
+  #aboutMe > img {
+    display: block;
+    position: absolute;
+    top: 86px;
+    transform: translateX(-65%);
   }
   #aboutMe h1 {
     line-height: 72px;
-    font-size: 72px;
+    font-size: 58px;
     text-align: start;
+    letter-spacing: -2px;
+    white-space: nowrap;
   }
   #aboutMe p {
     text-align: start;
@@ -403,10 +444,5 @@ footer > hr {
   }
   #aboutMe > div:nth-child(2) {
     display: block;
-  }
-  #hero {
-    grid-column: 2;
-    grid-row: 2;
-    overflow: visible;
   }
 }/*# sourceMappingURL=main.css.map */

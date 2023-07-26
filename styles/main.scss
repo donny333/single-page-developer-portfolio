@@ -44,18 +44,16 @@ p{
 }
 .linkMobile {
     text-decoration: none;
-    > span{
-        display: block;
-        text-decoration: underline 2px var(--green) !important;
-        text-underline-offset: 16px;
-        color: var(--white);
-        font-weight: bold;
-        letter-spacing: 2.29px;
-        text-align: center;
-        margin-bottom: 12px;
-        line-height: 26px;
-        font-size: 16px;
-    }
+    display: block;
+    text-decoration: underline 2px var(--green) !important;
+    text-underline-offset: 16px;
+    color: var(--white);
+    font-weight: bold;
+    letter-spacing: 2.29px;
+    text-align: center;
+    margin-bottom: 12px;
+    line-height: 26px;
+    font-size: 16px;
 }
 header{
     position: relative;
@@ -120,7 +118,7 @@ header{
             transform: translate(-100%, 100%);
         }
         .circle{
-            width: 29vw;
+            width: 129px;
             position: absolute;
             bottom: 0;
             right: 0;
@@ -130,6 +128,9 @@ header{
 }
 
 #aboutMe{
+    >img{
+        display: none;
+    }
     margin-top: 40px;
     margin-bottom: 80px;
     display: flex;
@@ -367,10 +368,11 @@ footer{
 
 @media only screen and (min-width: 768px){
     header{
-        position: static;
+        position: relative;
+        overflow: hidden;
         display: grid;
         grid-template-rows: 62px 1fr;
-        grid-template-columns: 1.5fr 1fr;
+        grid-template-columns: 58% 42%;
     }
     .myContacts{
         grid-area: 1/1/2/3;
@@ -385,15 +387,56 @@ footer{
             width: fit-content;
         }
     }
+
+    #hero{
+        grid-column: 2;
+        grid-row: 2;
+        #figures{
+            position: static;
+            >img:first-child{
+                display: none;
+            }
+            >img:nth-child(2){
+                display:block;
+                width: 322px;
+                position: absolute;
+                bottom: 50px;
+                right: 0;
+                z-index: -10;
+            }
+            >img:nth-child(3){
+                display: none;
+            }
+            >img:nth-child(5){
+                bottom: 50px;
+            }
+        }
+        .rings{
+            display: none;
+        }
+        .profilePicture{
+            width: 100%;
+        }
+    }
+
     #aboutMe{
+        >img{
+            display: block;
+            position: absolute;
+            top: 86px;
+            transform: translateX(-65%);
+        }
         grid-column: 1;
         grid-row: 2;
         margin-top: 90px;
         margin-bottom: 60px;
+        padding-right: 0;
         h1{
             line-height: 72px;
-            font-size: 72px;
+            font-size: 58px;
             text-align: start;
+            letter-spacing: -2px;
+            white-space: nowrap;
         }
         p{
             text-align: start;
@@ -406,15 +449,6 @@ footer{
         }
         >div:nth-child(2){
             display: block;
-            >h1{
-                // white-space: nowrap;
-            }
         }
     }
-    #hero{
-        grid-column: 2;
-        grid-row: 2;
-        overflow: visible;
-    }
-
 }
