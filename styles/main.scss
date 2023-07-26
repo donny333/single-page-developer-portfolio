@@ -43,16 +43,19 @@ p{
     line-height: 28px;
 }
 .linkMobile {
-    display: block;
-    text-decoration: underline 2px var(--green) !important;
-    text-underline-offset: 16px;
-    color: var(--white);
-    font-weight: bold;
-    letter-spacing: 2.29px;
-    text-align: center;
-    margin-bottom: 12px;
-    line-height: 26px;
-    font-size: 16px;
+    text-decoration: none;
+    > span{
+        display: block;
+        text-decoration: underline 2px var(--green) !important;
+        text-underline-offset: 16px;
+        color: var(--white);
+        font-weight: bold;
+        letter-spacing: 2.29px;
+        text-align: center;
+        margin-bottom: 12px;
+        line-height: 26px;
+        font-size: 16px;
+    }
 }
 header{
     position: relative;
@@ -96,6 +99,12 @@ header{
 #hero{
     overflow: hidden;
     #figures{
+        >img:nth-child(2){
+            display: none;
+        }
+        >img:nth-child(3){
+            display: none;
+        }
         position: relative;
         display: flex;
         justify-content: center;

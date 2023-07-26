@@ -46,6 +46,9 @@ p {
 }
 
 .linkMobile {
+  text-decoration: none;
+}
+.linkMobile > span {
   display: block;
   -webkit-text-decoration: underline 2px var(--green) !important;
           text-decoration: underline 2px var(--green) !important;
@@ -103,6 +106,12 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
+}
+#hero #figures > img:nth-child(2) {
+  display: none;
+}
+#hero #figures > img:nth-child(3) {
+  display: none;
 }
 #hero #figures .profilePicture {
   width: 50%;
