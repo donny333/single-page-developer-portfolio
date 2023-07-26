@@ -176,9 +176,9 @@ header {
 #expirience .rings {
   position: absolute;
   width: 530px;
-  right: 50%;
+  right: 0;
   bottom: 0;
-  transform: translate(100%, calc(50% - 80px));
+  transform: translate(50%, calc(50% - 80px));
 }
 #expirience > div {
   padding: 40px 0;
@@ -428,7 +428,7 @@ footer > hr {
   }
   #aboutMe h1 {
     line-height: 72px;
-    font-size: 58px;
+    font-size: 64px;
     text-align: start;
     letter-spacing: -2px;
     white-space: nowrap;
@@ -444,5 +444,32 @@ footer > hr {
   }
   #aboutMe > div:nth-child(2) {
     display: block;
+  }
+  #expirience > hr {
+    margin: 0;
+    margin: 0px 30px;
+  }
+  #expirience > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    row-gap: 52px;
+    margin: 0px 30px;
+  }
+  #expirience > div .language {
+    text-align: start;
+    padding-left: 2px;
+  }
+  #expirience > div .language > h1 {
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 14px;
+  }
+  #expirience > div .language > p {
+    line-height: 28px;
+    font-size: 18px;
+  }
+  #expirience > hr:last-child {
+    border: 1px solid var(--black);
   }
 }/*# sourceMappingURL=main.css.map */
